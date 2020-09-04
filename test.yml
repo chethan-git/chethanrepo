@@ -2,7 +2,5 @@
 - hosts: linuxservers
   become: yes
   tasks:
-      - name: Step1
+      - name: create file
         file: path=/home/vmadmin/temp12345 state=directory mode=775 owner=chethanbk group=chethanbk        
-        tags: step1
-        notify: notification1
